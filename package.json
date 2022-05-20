@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "umi dev",
+    "docs": "umi dev --dumi"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "umi": "^3.5.23"
+  },
+  "devDependencies": {
+    "@umijs/preset-dumi": "^1.1.40"
+  }
+}
