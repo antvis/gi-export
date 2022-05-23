@@ -10,3 +10,10 @@ Demonstration case of combining GraphInsight site export files with React projec
 npm i
 npm run start
 ```
+
+> ⚠️Note: React version need 17.x
+
+```json
+  "react": "^17.x",
+  "react-dom": "^17.x",
+```
