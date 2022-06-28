@@ -109,7 +109,7 @@ export const GI_PROJECT_CONFIG = {
       logic: true,
     },
     {
-      id: "SimpleNode",
+      id: "ClusterNode",
       props: {
         size: 26,
         color: "#3056E3",

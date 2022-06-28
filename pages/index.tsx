@@ -1,6 +1,7 @@
 // import GISDK from "@alipay/graphinsight"; （预计7月份开放）
 import React from "react";
 import { Counter } from "../components";
+import { ClusterNode } from "../elements";
 import {
   GI_LOCAL_DATA,
   GI_PROJECT_CONFIG,
@@ -8,7 +9,7 @@ import {
 } from "./GI_EXPORT_FILES";
 import { getCombinedAssets, getServicesByConfig } from "./utils";
 
-interface AppProps {}
+interface AppProps { }
 
 /** 生产资产 */
 const assets = getCombinedAssets();
@@ -19,6 +20,8 @@ const services = getServicesByConfig(GI_SERVICES_OPTIONS, GI_LOCAL_DATA);
 
 /** 更新资产 */
 assets.components["Counter"] = Counter;
+
+assets.elements["ClusterNode"] = ClusterNode;
 /** 更新配置 */
 //@ts-ignore
 config.components.push({
@@ -26,6 +29,7 @@ config.components.push({
   //@ts-ignore
   props: {},
 });
+
 /** 更新服务 */
 export const MyServices = services.map((c) => {
   if (c.id === "Mock/PropertiesPanel") {
